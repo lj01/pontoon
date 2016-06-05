@@ -1,0 +1,105 @@
+table.table0 {
+width: 20%;
+}
+table.table0.td {
+align: left;
+vertical-align: top;
+}
+
+table.tableturn {
+width: 50%;
+display: inline-block;  
+float: left;
+}
+table.tableturn.td {
+align: center;
+vertical-align: top;
+}
+
+table.tableturn1 {
+width: 50%;
+display: inline-block;  
+float: right;
+}
+table.tableturn1.td {
+text-align: center;
+vertical-align: top;
+}
+
+table.table1 {
+  width: 50%;
+  border: 1px solid #000;
+display: inline-block;  
+float: left; 
+height: 30%;
+vertical-align: center;
+}
+
+table.table1 th.draw {
+background-color: #4caf50;
+color: black;
+width: 5%;
+}
+
+table.table1 th.card_info {
+  background-color: #4CAF50;
+    color: black;
+  width: 35%;
+}
+
+table.table1 th.value {
+width: 5%;
+ background-color: #4CAF50;
+    color: black;
+}
+
+table.table1 th.total {
+width: 5%;
+ background-color: #4CAF50;
+    color: black;
+}
+
+table.table1 td {
+text-align: center;
+vertical-align: center;
+}
+
+// PLAYER 2 TABLE  //  
+
+table.table2 {
+  width: 50%;
+  border: 1px solid #000;
+display: inline-block;  
+float: right; 
+height: 30%;
+vertical-align: center;
+}
+
+table.table2 th.draw {
+background-color: #4caf50;
+color: black;
+width: 5%;
+}
+
+table.table2 th.card_info {
+  background-color: #4CAF50;
+    color: black;
+  width: 35%;
+}
+
+table.table2 th.value {
+width: 5%;
+ background-color: #4CAF50;
+    color: black;
+}
+
+table.table2 th.total {
+width: 5%;
+ background-color: #4CAF50;
+    color: black;
+}
+
+table.table2 td {
+text-align: center;
+vertical-align: center;
+}

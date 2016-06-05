@@ -1,0 +1,120 @@
+<head>
+<link rel="stylesheet" type="text/css" href="blackjack.css">
+<script type="text/javascript" src="card.js"></script>
+<script type="text/javascript">
+//cards [0] = hearts [1] = clubs [2] = spades [3] = diamonds
+var cards = new Array(1, 2, 3, 4);
+cards[0] = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13);
+cards[1] = new Array(14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26);
+cards[2] = new Array(27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39);
+cards[3] = new Array(40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52);
+
+</script>
+</head>
+<body>
+<!-- 
+demonstrating insertion of script into html 
+--!>
+<script type = "text/javascript">
+
+
+var headingtext = "<h1><center>Blackjack!</center></h1>", 
+myintro = "Play against the computer.",
+linktag = "<a href=\"http://www.bicyclecards.com/how-to-play/blackjack/\">More about blackjack</a>",
+begineffect = "<strong>",
+endeffect = "</strong>",
+beginpara = "<p>",
+endpara = "</p>",
+redtext = "<span style = \"color:red\">Rules: Aces are worth 1. Picture cards are worth 10. Other cards are worth their face value.</span>";
+
+document.write(headingtext);
+document.write(begineffect + myintro + endeffect);
+document.write(beginpara + linktag + endpara);
+document.write(redtext);
+</script>
+<p><b>Let's play!</b></p>
+
+<!-- GAME BUTTONS --!>
+<table class="table0">	
+  <thead>
+<td>
+<form>
+<input type="button" id="take_card" value="Take a card" onclick="player_cards()" />
+</form>
+</td>
+<td><input type="button" id="reset" value="Reset" onclick="reset()" style ="background-color:#dddfff" />
+</td>
+</table>
+
+<div id="result"></div>
+<br />
+<div id = "attempt"></div>
+
+<!-- PLAYER RESULT TABLE --!>
+<table class="tableturn">
+  <thead>
+
+    <tr>
+<th class="turn">Your turn</th>
+</tr>
+</table>
+
+<table class="tableturn1">
+  <thead>
+    <tr>
+<th class="turn">Your cat's turn</th>
+</tr>
+</table>
+
+<table class="table1">
+  <thead>
+<tr>
+      <th class="draw">Draw</th>
+      <th class="card_info">Card Info</th>
+    <th class="value">Card Value</th>
+      <th class="total">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+   <td><div id="draw"></div></td>
+      <td><div id="placeonpage1"></div><div id="pic1"></div></td>
+      <td><div id="card_face_value"></div></td>
+<td><div id="playerTotal"></div></td> 
+    </tr>
+
+  </tbody>
+</table>
+
+
+
+<div id="placeonpage3"></div>
+<div id="placeonpage4"></div>
+<div id="placeonpage5"></div>
+<div id="placeonpage6"></div>
+<div id="anothercard1"></div>
+
+<!-- COMPUTER RESULT TABLE --!>
+
+
+<table class="table2">
+  <thead>
+<tr>
+      <th class="draw">Draw</th>
+      <th class="card_info">Card Info</th>
+    <th class="value">Card Value</th>
+      <th class="total">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+   <td><div id="draw"></div></td>
+      <td><div id="placeonpage1"></div><div id="pic1"></div></td>
+      <td><div id="card_face_value"></div></td>
+<td><div id="playerTotal"></div></td> 
+    </tr>
+
+  </tbody>
+</table>
+
+</body>
